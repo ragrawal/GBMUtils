@@ -3,6 +3,11 @@
 #' Plots GBM tree using graphviz library
 #' @param m model 
 #' @param tree tree to plot
+#' @param fontsize Font size to use for rendering node and edge labels. By default its set to 25
+#' @param nodeshape Shape of the node. By default its ellipse. Other options are rectangle, square, circle. See graphNEL for more options
+
+#' @param tree tree to plot
+
 #' @keywords gbm, json, gbm2json
 #' @export
 #' @examples
@@ -10,7 +15,7 @@
 
 
 treeplot <-
-function(m, tree=1, fontsize=20, nodeshape="ellipse", ...){
+function(m, tree=1, fontsize=25, nodeshape="ellipse", ...){
 
 	#TODO: Sanity check: tree < noTree(gbmModel)
 
