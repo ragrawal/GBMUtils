@@ -10,7 +10,7 @@
 
 
 treeplot <-
-function(m, tree=1){
+function(m, tree=1, fontsize=20, nodeshape="ellipse", ...){
 
 	#TODO: Sanity check: tree < noTree(gbmModel)
 
@@ -70,6 +70,6 @@ function(m, tree=1){
 	nAttrs$fillcolor <- nodeColors
 	eAttrs$label <- edgeLabels
 	plot(g, nodeAttrs = nAttrs, edgeAttrs=eAttrs,
-	attrs=list(node=list(fontcolo="black",fontsize=20,shape="rectangle")))
+	attrs=list(node=list(fontcolor="black",fontsize=fontsize,fixedsize=FALSE, shape=nodeshape), edge=list(fontsize=fontsize)))
 }
 
