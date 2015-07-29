@@ -1,4 +1,4 @@
-#' plot.gbm.tree
+#' treeplot
 #'
 #' Plots GBM tree using graphviz library
 #' @param m model 
@@ -6,10 +6,10 @@
 #' @keywords gbm, json, gbm2json
 #' @export
 #' @examples
-#' plot.gbm.tree(model, 1)
+#' treeplot(model, 1)
 
 
-plot.gbm.tree <-
+treeplot <-
 function(m, tree=1){
 
 	#TODO: Sanity check: tree < noTree(gbmModel)
