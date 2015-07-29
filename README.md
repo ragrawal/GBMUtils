@@ -1,10 +1,13 @@
 # Installation
+
+```R
 library(devtools)
 source("http://bioconductor.org/biocLite.R")
 biocLite("graph")
 biocLite("Rgraphviz")
 install.packages('RColorBrewer', dependencies=T)
 install_github('ragrawal/GBMUtils')
+```
 
 # Usage
 
